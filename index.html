@@ -11,6 +11,7 @@
 
 <body class="body">
     <div class="ui">
+
         <header class="navigation">
             <nav class="part1">
                 <img src="images/logo.png" class="img-logo" alt="">
@@ -109,8 +110,8 @@
                                 City H5</b></li>
                     </div>
                     <div class="sidebar-hover">
-                        <li class="sidebar"><img class="panel-icon2" src="images/ahad.jpg" alt=""><b
-                                class="text">AHA</b></li>
+                        <li class="sidebar"><img class="panel-icon2" src="images/ahad.jpg" alt=""><b class="text">A H
+                                A</b></li>
                     </div>
                     <div class="sidebar-hover">
                         <li class="sidebar"><img class="panel-icon2" src="images/seee more.png" alt=""><b
@@ -119,13 +120,163 @@
                 </ul>
             </div>
             <div class="centre-content">
+                <div class="stories-sec-div">
+                    <div class="story-content">
+                        <img src="images/story.png" class="story-icon" alt=""><b class="text2"
+                            style="color: #0776e8;">Stories</b>
+                    </div>
+                    <div class="story-content">
+                        <img src="images/reels.png" class="story-icon" alt=""><b class="text2">Reels</b>
+                    </div>
+                </div>
+
+                <div class="centre-story">
+                    <div class="story">
+                        <img class="story-pic" src="images/profile story.png" alt="">
+                    </div>
+                    <div class="story">
+                        <img class="story-pic" src="images/story (1).jpg" alt="">
+                        <p class="s-text">Your Story</p>
+                    </div>
+                    <div class="story">
+                        <img class="story-pic" src="images/story (2).jpg" alt="">
+                        <p class="s-text">Friend 1</p>
+                    </div>
+                    <div class="story">
+                        <img class="story-pic" src="images/story (3).jpg" alt="">
+                        <p class="s-text">Friend 2</p>
+                    </div>
+                </div>
+
+
+                <div class="post-bar">
+
+                    <div class="top-bar">
+
+                        <img src="images/profile.jpg" height="40px" style="border-radius: 20px;" alt="">
+
+                        <button id="modalBox" class="post-div">
+
+
+                            <p class="post-text">What's on your mind , Abdul ?</p>
+
+
+                        </button>
+
+
+                    </div>
+
+                    <hr style="margin-right: 20px; color: rgb(165, 165, 165);">
+                    <div class="post-div2">
+                        <div class="post-icons"><img src="images/post icons (1).png" alt="">
+                            <p class="text-short">Photo / Video</p>
+                        </div>
+                        <div class="post-icons"><img src="images/post icons (2).png" alt="">
+                            <p class="text-short">Feeling / Activity</p>
+                        </div>
+                        <div class="post-icons"><img src="images/post icons (3).png" alt="">
+                            <p class="text-short">Live</p>
+                        </div>
+                    </div>
+
+
+                </div>
+
+            </div>
+            <div class="left">
+                <p class="left-p">Birtdays</p>
+                <div class="bday">
+                    <img class="bday-img" src="images/gift.png" height="30px" alt="">
+                    <p class="bday-text"> Friend's Birtday is today</p>
+                </div>
+                <hr style="margin-right: 20px; color: rgb(165, 165, 165); padding-left: 40px; padding-right: 40px;">
+                <div class="friend-bar">
+                    <div class="friend-no">
+                        <img src="images/friens (1).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 1 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (2).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 2 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (3).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 3 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (1).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 4 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (3).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 5 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (3).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 6 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (2).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 7 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (3).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 8 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (2).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 9 </p>
+                    </div>
+                    <div class="friend-no">
+                        <img src="images/friens (1).jpg" class="friend-img" alt="">
+                        <p class="friend-name"> Friend 10 </p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal">
+
+                <div class="modal-content">
+                    <div class="modal-up">
+                        <h1 class="modal-heading">
+                            Create Post
+                        </h1>
+                        <button id="closeModal" class="cross-sym">×</button>
+                    </div>
+                    <hr style="margin-left: 10px; margin-right: 10px;">
+                    <div class="profile">
+                        <img src="images/profile.jpg" class="modal-img" alt="">
+
+                        <p class="text-p">Abdul Ahad</p>
+
+                    </div>
+                    <div class="text-bar">
+                        <div class="textcontent">
+                            <textarea oninput="updateText()" id="myTextarea" class="textarea"></textarea>
+                        </div>
+                        <div class="result-div" id="textPost" contenteditable="true"></div>
+                    </div>
+                    <div class="row-pic">
+
+                        <p class="text-p">Add to your post</p>
+                        <img src="images/Capture2.JPG" alt="">
+
+                    </div>
+                    <button class="post-button">
+                        Post
+                    </button>
+
+                </div>
 
             </div>
 
         </div>
 
 
-    </div>
+
+
+
+
+        <script src="app.js"></script>
 </body>
 
 </html>
