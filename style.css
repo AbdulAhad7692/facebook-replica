@@ -349,7 +349,7 @@ nav.part2 {
 
 .post-text {
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     opacity: 0.5;
     text-align: center;
     font-family: 'Arial Narrow Bold', sans-serif;
@@ -456,13 +456,14 @@ nav.part2 {
 .modal {
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(0, 0, 0, 0.9);
     position: absolute;
     top: 0;
     display: flex;
     justify-content: center;
     align-items: center;
     display: none;
+    transition: all .5s ease;
 }
 
 .modal-content {
@@ -524,19 +525,8 @@ nav.part2 {
     padding-left: 10px;
 }
 
-.privacy-button {
-    margin-top: 0px;
-    background-color: #424444;
-    height: 20px;
-    font-size: 16px;
-    color: white;
-    width: 80px;
-    border-radius: 5px;
-    border-style: none;
-}
-
 .text-bar {
-    margin-top: 10px;
+    margin-top: -10px;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -558,11 +548,39 @@ nav.part2 {
 
 .result-div {
     background-color: #242526;
-    height: 150px;
+    height: 120px;
     width: 460px;
     color: white;
     font-size: 28px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow-x: scroll;
+    overflow-y: scroll;
+    scrollbar-color: #c0c0c0 #f0f0f0;
+
 }
+
+
+.result-div::-webkit-scrollbar {
+    width: 1px;
+
+}
+
+
+.result-div::-webkit-scrollbar-thumb {
+    background: #c0c0c0;
+
+}
+
+
+.result-div::-webkit-scrollbar-thumb:hover {
+    background: #a0a0a0;
+
+}
+
 
 .row-pic {
     display: flex;
@@ -591,4 +609,49 @@ nav.part2 {
 .post-button:hover {
     background-color: #4b94f3;
     cursor: pointer;
+}
+
+.dropdown {
+    display: flex;
+}
+
+.images-change {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    background-color: #2374e1;
+    margin-top: 10px;
+    margin-left: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.post-img {
+    height: 80px;
+}
+
+.color-input {
+    height: 40px;
+    width: 40px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.post-container {
+    background-color: #242526;
+    height: 250px;
+    width: 550px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+.text-post {
+    margin-left: 30px;
+    font-size: 16px;
+    margin-left: 20px;
+    position: absolute;
+    color: white;
+    margin-top: 25px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
