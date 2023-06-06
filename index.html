@@ -20,9 +20,9 @@
         <div class="login-div">
             <div class="form">
 
-                <input type="text" class="input" id="" placeholder="Enter email adress or phone number"></br>
-                <input type="password" class="input" id="" placeholder="Password">
-                <button class="btn">Log in</button> <br><br>
+                <input type="text" class="input" id="email" placeholder="Enter email address or phone number"></br>
+                <input type="password" class="input" id="password" placeholder="Password">
+                <button class="btn" onclick="login()">Log in</button> <br><br>
                 <a href="javascript:void(0);" class="link">Forgetten Password ?</a>
 
                 <hr class="hr">
@@ -35,22 +35,41 @@
     <div class="modal">
         <div class="modal-box">
 
-            <h1 style="margin: 5px 10px;"> Sign Up</h1>
-            <p style="margin-left: 10px;">It's quick and easy</p>
+
+            <div style="display: flex;">
+                <h1 style="margin: 5px 10px;"> Sign Up</h1>
+                <button class="cross-sym" id="closeModal"><p style="font-weight: bolder;">×</p></button>
+            </div>
+            <p style="margin-left: 10px;">It's quick and easy</p> 
             <hr style="margin-top: 10px;">
-            <div class="upper-input">
-                <input type="text" class="input2" id="" placeholder="First Name">
-                <input type="text" class="input2" id="" placeholder="Surname">
-            </div>
-            <div class="lower-input">
-                <input type="text" class="input3" id="" required placeholder="Mobile Name or email address">
-                <input type="text" class="input3" id="" required placeholder="New password">
-            </div>
-            <button style="margin-left: 120px;" class="btn2">
-                sign up
-            </button>
+
+            <form action="">
+
+                <div class="upper-input">
+
+                    <input type="text" class="input2" id="firstName" placeholder="First Name">
+                    <input type="text" class="input2" id="lastName" placeholder="Surname">
+
+                </div>
+                <div class="lower-input">
+
+                    <input type="text" class="input3" id="getUsername" required placeholder="Mobile Name or email address">
+                    <input type="password" class="input3" id="getPassword" required placeholder="Password">
+
+                </div>
+
+                <h4 style="margin-left: 20px; font-family: Segoe UI;">Password and username required</h4>
+
+                <button onclick="signup()" style="margin-left: 120px;" class="btn2">
+                    sign up
+                </button>
+
+            </form>
         </div>
     </div>
+
+
+    
 
     <script src="login.js"></script>
 </body>

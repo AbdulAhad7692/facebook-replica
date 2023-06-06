@@ -68,7 +68,7 @@ body {
 }
 
 .btn:hover {
-    background-color: #2d81f0;
+    background-color: #1364ce;
 }
 
 .link {
@@ -101,7 +101,6 @@ body {
 }
 
 .modal {
-    /* display: none; */
     width: 100%;
     height: 100%;
     background-color: rgba(255, 255, 255, 0.6);
@@ -110,24 +109,45 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    display: none;
     transition: all .5s ease;
 }
 
 .modal-box {
     background-color: white;
-    height: 350px;
+    height: 360px;
     width: 450px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
 }
 
+.cross-sym {
+    background-color: #e6e6e6;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    margin-left: 260px;
+    margin-top: 10px;
+    border: none;
+}
+
+.cross-sym:hover {
+    background-color: #b6b6b6;
+}
+
 .modal-box h1,
 p {
+    /* position: ; */
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.upper-input{
+
+.upper-input {
     padding-left: 5px;
 }
+
 .input2 {
     height: 35px;
     width: 190px;
@@ -140,6 +160,7 @@ p {
     outline: none;
     font-size: 16px;
 }
+
 .input3 {
     height: 35px;
     width: 410px;
